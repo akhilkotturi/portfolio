@@ -18,6 +18,14 @@ body {
   margin: 0 auto;
 }
 
+.bg-darkblue {
+  background-color: rgb(2, 0, 27);
+}
+
+.text-darkblue {
+  color: rgb(2, 0, 27);
+}
+
 @media (max-width: 800px) {
   /* .navloc {
     visibility: hidden;
@@ -25,5 +33,11 @@ body {
   .wrapper {
     margin: 10 10;
     padding-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 90lvh;
   }
 }
