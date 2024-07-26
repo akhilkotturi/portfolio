@@ -7,6 +7,10 @@ body {
   font-family: "Be Vietnam Pro",sans-serif;
 }
 
+/* header {
+  background-image: url(/public/Images/HeaderBack.png);
+} */
+
 .font-normal {
   font-family: "Be Vietnam Pro",sans-serif;
 }
@@ -15,6 +19,18 @@ body {
   max-width: 1134px;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin: 0 auto;
+}
+
+.wrapper-n {
+  max-width: 1134px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.wrapper-c {
+  max-width: 1134px;
+  padding: 1rem;
   margin: 0 auto;
 }
 
