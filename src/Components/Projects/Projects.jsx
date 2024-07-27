@@ -25,10 +25,10 @@ export default function Projects() {
                                             <div className="flex h-auto mt-3 md:flex-row flex-col-reverse gap-2">
                                                 <div className="flex flex-col-reverse md:flex-col justify-between gap-2">
                                                     <div className="p-3 rounded-2xl bg-blue-950 border-blue-950 border-2 cursor-pointer border-solid md:w-auto text-center text-white hover:bg-white hover:text-blue-950">
-                                                        <a href={item.live}>View Live</a>
+                                                        <a href={item.live} target="blank">View Live</a>
                                                     </div>
                                                     <div className="p-3 rounded-2xl bg-blue-950 border-blue-950 border-2 cursor-pointer border-solid md:w-auto text-center text-white hover:bg-white hover:text-blue-950">
-                                                        <a href={item.repo}>View Repo</a>
+                                                        <a href={item.repo} target="blank">View Repo</a>
                                                     </div>
                                                 </div>
                                                 <div className="p-2 rounded-2xl bg-blue-950 border-blue-950 border-2 border-solid md:w-full text-center text-white grid md:grid-cols-3 md:grid-rows-2 gap-3">
