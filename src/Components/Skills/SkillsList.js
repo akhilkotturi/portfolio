@@ -47,7 +47,7 @@ export const skills = [
       style: { filter: "invert(1)" },
     },
     {
-      title: "Figma",
-      icon: "Images/Icons/figma-svgrepo-com.svg",
+      title: "Python",
+      icon: "Images/Icons/python-svgrepo-com.svg",
     },
   ];

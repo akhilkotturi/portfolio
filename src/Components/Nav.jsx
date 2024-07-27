@@ -16,9 +16,8 @@ export default function Nav() {
                         </span>
                     </li>
                     <ul className="flex items-center space-x-10">
-                        <li className="navloc transition transform hover:scale-110 cursor-pointer"><a href="google.com">Home</a></li>
-                        <li className="navloc transition transform hover:scale-110 cursor-pointer">Projects</li>
-                        <li className="navloc transition transform hover:scale-110 cursor-pointer">Contact</li>
+                        <li className="navloc transition transform hover:scale-110 cursor-pointer"><Link to="/">Home</Link></li>
+                        <li className="navloc transition transform hover:scale-110 cursor-pointer"><Link to="/projects">Projects</Link></li>
                     </ul>
                 </nav>
             </div>

@@ -1,21 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
-import Nav from './Components/Nav';
-import Header from './Components/Header';
-import About from './Components/About';
-import Skills from './Components/Skills/Skills';
-import Contact from './Components/Contact/Contact';
-import Footer from './Components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import './styles/App.css';
+import HomePage from './HomePage';
+import ProjectsPage from './ProjectsPage';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Header />
-      <About />
-      <Skills />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="projects" element={<ProjectsPage />} />
+      </Routes>
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function Skills() {
                                         className="w-20 mx-auto flex items-center flex-col justify-center border-2 p-4 rounded-xl drop-shadow-xl hover:scale-105"
                                     >
                                         <img src={item.icon} style={item.style} />
-                                        <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
+                                        <p className="text-xs font-bold mt-3 opacity-80">
                                             {item.title}
                                         </p>
                                     </div>
@@ -28,7 +28,7 @@ export default function Skills() {
                         </div>
 
                         <div className="mt-11 p-3 rounded-2xl bg-blue-950 border-blue-950 border-2 cursor-pointer border-solid w-44 text-center text-white hover:bg-white hover:text-blue-950">
-                                <a href="https://drive.google.com/file/d/1VgRpewoZPGt0aZRZzLzJA-Y13qr3APRP/view?usp=sharing" target="blank">View My Projects!</a>
+                                <a href="projects">View My Projects!</a>
                         </div>
                     </section>
                 </div>

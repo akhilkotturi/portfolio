@@ -15,10 +15,6 @@ export default function Footer() {
                         <li className="mt-4 mb-4">
                             <a href="">Projects</a>
                         </li>
-
-                        <li className="mt-4 mb-4">
-                            <a href="">Contact</a>
-                        </li>
                         </ul>
                     </div>
 
@@ -49,7 +45,7 @@ export default function Footer() {
                     </div>
                     </div>
 
-                    <p className="pt-9">Built with ❤️ by Akhil Kotturi using React JS & TailwindCSS.</p>
+                    <p className="pt-9">Built with ❤️ by Akhil Kotturi using React & TailwindCSS.</p>
                 </div>
             </footer>
         </>
