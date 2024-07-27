@@ -13,7 +13,7 @@ export const projects = [
           icon: "Images/Icons/css-3-svgrepo-com.svg",
         },
         {
-          title: "React",
+          title: "React JS",
           icon: "Images/Icons/react-svgrepo-com.svg",
         },
         {
@@ -23,8 +23,10 @@ export const projects = [
         {
           title: "Firebase",
           icon: "Images/Icons/firebase-svgrepo-com.svg",
-        },
-      ]
+        }
+      ],
+      live: "https://www.projectucode.org/",
+      repo: "https://github.com/Project-UCode/Website",
       // skills: ["HTML","CSS","React","React Router","Firebase"]
     },
     {
@@ -41,7 +43,7 @@ export const projects = [
             icon: "Images/Icons/css-3-svgrepo-com.svg",
           },
           {
-            title: "React",
+            title: "React JS",
             icon: "Images/Icons/react-svgrepo-com.svg",
           },
           {
@@ -54,7 +56,9 @@ export const projects = [
             icon: "Images/Icons/aws-svgrepo-com.svg",
             style: { filter: "invert(1)" },
           },
-        ]
+        ],
+        live: "",
+        repo: "https://github.com/akhilkotturi/springboot-render",
         // skills: ["HTML","CSS","React","SpringBoot","AWS"]
     },
   ];
