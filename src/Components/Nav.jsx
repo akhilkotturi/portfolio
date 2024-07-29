@@ -8,11 +8,13 @@ export default function Nav() {
                 <nav className="flex items-center justify-between sticky w-1000">
                     <li className="list-none font-bold text-lg cursor-pointer">
                         <span className="font-black text-xl items-center">
+                            <Link to="/">
                             <img
                                 className="mr-2 transform hover:rotate-180 hover:scale-75 transition-transform duration-500"
                                 src="Images/akhillogo.png"
                                 width="60"
                             />
+                            </Link>
                         </span>
                     </li>
                     <ul className="flex items-center space-x-10">
