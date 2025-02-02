@@ -11,7 +11,6 @@ export default function ProjectHeader() {
                         Here are  some pretty cool applications I've built throughout my software development journey!
                     </p>
                 </header>
-                
             </div>
         </>
     );

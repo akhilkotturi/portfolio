@@ -9,11 +9,11 @@ export default function Footer() {
 
                         <ul className="">
                         <li className="mt-4 mb-4">
-                            <a href="">Home</a>
+                            <a href="/">Home</a>
                         </li>
 
                         <li className="mt-4 mb-4">
-                            <a href="">Projects</a>
+                            <a href="/projects">Projects</a>
                         </li>
                         </ul>
                     </div>

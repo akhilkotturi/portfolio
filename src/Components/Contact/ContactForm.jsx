@@ -57,7 +57,7 @@ function ContactForm() {
                 errors={state.errors}
             />
             </div>
-            <button type="submit" disabled={state.submitting} className='text-white pt-5 bg'>
+            <button type="submit" disabled={state.submitting} className='text-white pt-5'>
                 Submit
             </button>
         </form>

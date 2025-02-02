@@ -42,6 +42,10 @@ body {
   color: rgb(2, 0, 27);
 }
 
+.shadow-5xl {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.7);
+}
+
 @media (max-width: 800px) {
   /* .navloc {
     visibility: hidden;

@@ -17,7 +17,7 @@ export default function Projects() {
                                         key={index}
                                     >
                                         <h3 className="text-darkblue text-4xl text-left font-bold md:pb-5 pb-3">{item.title}</h3>
-                                        <div className=" md:p-7 p-3 bg-darkblue md:rounded-3xl rounded-xl mb-10">
+                                        <div className=" md:p-7 p-3 bg-darkblue md:rounded-3xl rounded-xl mb-10 shadow-5xl">
                                             <img src={item.photo} className="rounded-xl" />
                                             <p className="text-xs md:text-xl mt-3 opacity-80 text-darkblue bg-white p-2 rounded-xl">
                                                 {item.description}
