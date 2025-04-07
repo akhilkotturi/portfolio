@@ -19,7 +19,7 @@ export default function About() {
                             </p>
 
                             <div className="mt-11 p-3 rounded-2xl bg-blue-950 border-blue-950 border-2 cursor-pointer border-solid w-44 text-center text-white hover:bg-white hover:text-blue-950">
-                                <a href="" target="">Download Resume</a>
+                                <a href="https://drive.google.com/file/d/1YOPIxX_Xy8ptfE-N4-GZBaKavEeTL8u6/view?usp=sharing" target="blank">Download Resume</a>
                             </div>
                         </div>
                         <img src="Images/akhilphotosquare.png" className="rounded-3xl" alt="akhil-photo" />

@@ -45,7 +45,7 @@ export default function Footer() {
                     </div>
                     </div>
 
-                    <p className="pt-9">Built with ❤️ by Akhil Kotturi using React & TailwindCSS.</p>
+                    <p className="pt-9">Built with ❤️ by Akhil Kotturi using NextJS & TailwindCSS.</p>
                 </div>
             </footer>
         </>
