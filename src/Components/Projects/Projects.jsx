@@ -1,5 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 import { projects } from "./ProjectList";
 
 export default function Projects() {
@@ -18,7 +22,23 @@ export default function Projects() {
                                     >
                                         <h3 className="text-darkblue text-4xl text-left font-bold md:pb-5 pb-3">{item.title}</h3>
                                         <div className=" md:p-7 p-3 bg-darkblue md:rounded-3xl rounded-xl mb-10 shadow-5xl">
-                                            <img src={item.photo} className="rounded-xl" />
+                                            <Swiper
+                                                slidesPerView={1}
+                                                spaceBetween={30}
+                                                loop={true}
+                                                pagination={{
+                                                    clickable: true,
+                                                }}
+                                                navigation={true}
+                                                modules={[Pagination, Navigation]}
+                                                className="mySwiper"
+                                            >
+                                                {item.photos.map((photo, index) => {
+                                                    return (
+                                                        <SwiperSlide key={index}><img src={photo} className="rounded-xl" /></SwiperSlide>
+                                                    );
+                                                })}
+                                            </Swiper>
                                             <p className="text-xs md:text-xl mt-3 opacity-80 text-darkblue bg-white p-2 rounded-xl">
                                                 {item.description}
                                             </p>
@@ -39,7 +59,7 @@ export default function Projects() {
                                                                 key={index}
                                                                 className="flex items-center justify-center md:justify-normal border-2 p-2 rounded-xl drop-shadow-xl hover:scale-105 gap-2"
                                                             >
-                                                                <img src={skill.icon} style={skill.style} className="w-10 h-10"/>
+                                                                <img src={skill.icon} style={skill.style} className="w-10 h-10" />
                                                                 <h4 className="text-2xl font-bold opacity-80">
                                                                     {skill.title}
                                                                 </h4>
