@@ -1,5 +1,38 @@
 export const projects = [
     {
+      title: "CARTA",
+      photos: [
+        "Images/ProjectPictures/Carta/hacktx25_1.png",
+        "Images/ProjectPictures/Carta/hacktx25_3.png",
+        "Images/ProjectPictures/Carta/hacktx25_4.png",
+      ],
+      description: "CARTA streamlines the car payment planning process and educates users on how their finances are translated into payment plans. When the user enters the application, they can look through various Toyota car models, including the Camry and other popular models. After selecting the car that best suits them, the user is directed to complete a short form, where they input their financial data, including their credit score and pay stub. This user is then provided a detailed financial advising statement regarding recommended payment plans optimized with their data.",
+      skills: [
+        {
+          title: "React JS",
+          icon: "Images/Icons/react-svgrepo-com.svg",
+        },
+        {
+          title: "Flask",
+          icon: "Images/Icons/flask-svgrepo-com.svg",
+        },
+        {
+          title: "Gemini API",
+          icon: "Images/Icons/gemini-color.svg",
+        },
+        {
+          title: "Eleven Labs",
+          icon: "Images/Icons/elevenlabs.svg",
+        },
+        {
+          title: "Three JS",
+          icon: "Images/Icons/Three.js_Icon.svg",
+        }
+      ],
+      live: "https://carta-ecru.vercel.app/",
+      repo: "https://github.com/nootsquared/CARTA",
+    },
+    {
       title: "Project UCode",
       photos: [
         "Images/ProjectPictures/ProjectUCodeLanding.png",
