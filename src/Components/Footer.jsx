@@ -40,7 +40,7 @@ export default function Footer() {
                         <h3 className="text-2xl font-bold">Contact</h3>
 
                         <ul className="">
-                        <li className="mt-4 mb-4"><i class="fa-solid fa-envelope"></i> akhilkcontact@gmail.com</li>
+                        <li className="mt-4 mb-4"><i class="fa-solid fa-envelope"></i> akhilk@utexas.edu</li>
                         </ul>
                     </div>
                     </div>
