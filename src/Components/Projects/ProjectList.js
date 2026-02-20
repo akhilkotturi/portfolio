@@ -1,6 +1,7 @@
 export const projects = [
     {
       title: "CARTA",
+      tags: ["fintech", "car payment", "financial planning", "ai", "hackathon"],
       photos: [
         "Images/ProjectPictures/Carta/hacktx25_1.png",
         "Images/ProjectPictures/Carta/hacktx25_3.png",
@@ -34,6 +35,7 @@ export const projects = [
     },
     {
       title: "Fitly",
+      tags: ["fitness", "workout planner", "health", "full stack", "ai"],
       photos: [
         "Images/ProjectPictures/Fitly/Fitly_1.png",
         "Images/ProjectPictures/Fitly/Fitly_2.png",
@@ -66,6 +68,7 @@ export const projects = [
     },
     {
       title: "Project UCode",
+      tags: ["nonprofit", "education", "e-learning", "community", "web platform"],
       photos: [
         "Images/ProjectPictures/ProjectUCodeLanding.png",
         "Images/ProjectPictures/ProjectUCodeAbout.png",
@@ -100,6 +103,7 @@ export const projects = [
     },
     {
         title: "Tax Calulator",
+      tags: ["tax", "property tax", "calculator", "spring boot", "aws"],
         photos: [
         "Images/ProjectPictures/TaxAppLanding.png",
         ],

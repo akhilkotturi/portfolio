@@ -1,20 +1,51 @@
-import { Link, NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
+import { useMemo, useState } from "react";
 import { projects } from "./ProjectList";
 
 export default function Projects() {
+    const [searchQuery, setSearchQuery] = useState("");
+
+    const filteredProjects = useMemo(() => {
+        const normalizedQuery = searchQuery.trim().toLowerCase();
+
+        if (!normalizedQuery) {
+            return projects;
+        }
+
+        return projects.filter((project) => {
+            const searchableText = [
+                project.title,
+                project.description,
+                ...(project.tags || []),
+                ...project.skills.map((skill) => skill.title),
+            ]
+                .join(" ")
+                .toLowerCase();
+
+            return searchableText.includes(normalizedQuery);
+        });
+    }, [searchQuery]);
 
     return (
         <>
             <div className="bg-white">
                 <div className="wrapper-n text-white">
                     <section className="pt-10 sm:pt-20 pb-5 m-auto items-left flex flex-col">
+                        <div className="w-full mb-8">
+                            <input
+                                type="text"
+                                value={searchQuery}
+                                onChange={(event) => setSearchQuery(event.target.value)}
+                                placeholder="Search projects by title, tech, or tags"
+                                className="w-full text-darkblue bg-white border-2 border-darkblue rounded-xl px-4 py-3 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-darkblue"
+                                aria-label="Search projects"
+                            />
+                        </div>
                         <div className="relative flex flex-col md:gap-8 justify-between">
-                            {projects.map((item, index) => {
+                            {filteredProjects.map((item, index) => {
                                 return (
                                     <div
                                         title={item.title}
@@ -35,7 +66,7 @@ export default function Projects() {
                                             >
                                                 {item.photos.map((photo, index) => {
                                                     return (
-                                                        <SwiperSlide key={index}><img src={photo} className="rounded-xl" /></SwiperSlide>
+                                                        <SwiperSlide key={index}><img src={photo} alt={`${item.title} preview ${index + 1}`} className="rounded-xl" /></SwiperSlide>
                                                     );
                                                 })}
                                             </Swiper>
@@ -45,10 +76,10 @@ export default function Projects() {
                                             <div className="flex h-auto mt-3 md:flex-row flex-col-reverse gap-2">
                                                 <div className="flex flex-col-reverse md:flex-col justify-between gap-2">
                                                     <div className="p-3 rounded-2xl bg-blue-950 border-blue-950 border-2 cursor-pointer border-solid md:w-auto text-center text-white hover:bg-white hover:text-blue-950">
-                                                        <a href={item.live} target="blank">View Live</a>
+                                                        <a href={item.live} target="_blank" rel="noreferrer">View Live</a>
                                                     </div>
                                                     <div className="p-3 rounded-2xl bg-blue-950 border-blue-950 border-2 cursor-pointer border-solid md:w-auto text-center text-white hover:bg-white hover:text-blue-950">
-                                                        <a href={item.repo} target="blank">View Repo</a>
+                                                        <a href={item.repo} target="_blank" rel="noreferrer">View Repo</a>
                                                     </div>
                                                 </div>
                                                 <div className="p-2 rounded-2xl bg-blue-950 border-blue-950 border-2 border-solid md:w-full text-center text-white grid md:grid-cols-3 md:grid-rows-2 gap-3">
@@ -59,7 +90,7 @@ export default function Projects() {
                                                                 key={index}
                                                                 className="flex items-center justify-center md:justify-normal border-2 p-2 rounded-xl drop-shadow-xl hover:scale-105 gap-2"
                                                             >
-                                                                <img src={skill.icon} style={skill.style} className="w-10 h-10" />
+                                                                <img src={skill.icon} alt={skill.title} style={skill.style} className="w-10 h-10" />
                                                                 <h4 className="text-2xl font-bold opacity-80">
                                                                     {skill.title}
                                                                 </h4>
@@ -72,6 +103,12 @@ export default function Projects() {
                                     </div>
                                 );
                             })}
+
+                            {filteredProjects.length === 0 && (
+                                <div className="text-darkblue text-left text-xl font-semibold pb-10">
+                                    No projects found. Try a different keyword.
+                                </div>
+                            )}
                         </div>
                     </section>
                 </div>
