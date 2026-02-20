@@ -4,20 +4,23 @@ export default function Skills() {
 
     return (
         <>
-            <div className="bg-darkblue">
+            <div className="bg-transparent">
                 <div className="wrapper-n text-white">
-                    <section className="pt-10 sm:pt-20 pb-20 m-auto items-center flex flex-col ">
-                        <h1 className='lg:text-6xl sm:text-3xl text-5xl font-bold pb-10'>My Skills</h1>
-                        <div className="relative max-w-lg w-full mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-6 items-center place-content-center md:pr-10">
+                    <section className="pt-6 sm:pt-10 pb-12 sm:pb-16 m-auto items-center flex flex-col">
+                        <h2 className='lg:text-6xl sm:text-3xl text-5xl font-bold pb-4'>My Skills</h2>
+                        <p className="text-white/75 text-sm md:text-lg pb-10 text-center max-w-2xl">
+                            What I love to use when I build.
+                        </p>
+                        <div className="relative max-w-4xl w-full mx-auto grid gap-x-6 gap-y-8 sm:gap-8 md:gap-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 items-center place-content-center">
                             {skills.map((item, index) => {
                                 return (
                                     <div
                                         title={item.title}
                                         key={index}
-                                        className="w-20 mx-auto flex items-center flex-col justify-center border-2 p-4 rounded-xl drop-shadow-xl hover:scale-105"
+                                        className="w-full mx-auto flex items-center flex-col justify-center border border-white/15 bg-white/[0.04] p-4 rounded-2xl hover:scale-105 transition-transform"
                                     >
-                                        <img src={item.icon} alt={item.title} style={item.style} />
-                                        <p className="text-xs font-bold mt-3 opacity-80">
+                                        <img src={item.icon} alt={item.title} style={item.style} className="w-10 h-10" />
+                                        <p className="text-xs font-bold mt-3 opacity-90 text-center">
                                             {item.title}
                                         </p>
                                     </div>
@@ -25,9 +28,9 @@ export default function Skills() {
                             })}
                         </div>
 
-                        <div className="mt-11 p-3 rounded-2xl bg-blue-950 border-blue-950 border-2 cursor-pointer border-solid w-44 text-center text-white hover:bg-white hover:text-blue-950">
-                                <a href="projects">View My Projects!</a>
-                        </div>
+                        <a href="projects" className="mt-11 px-5 py-3 rounded-2xl border border-white/50 text-white font-semibold hover:bg-white/20 hover:text-white transition-colors">
+                            View My Projects
+                        </a>
                     </section>
                 </div>
             </div>

@@ -3,6 +3,7 @@ import Nav from './Components/Nav';
 import ProjectHeader from './Components/ProjectHeader';
 import Footer from './Components/Footer';
 import Projects from './Components/Projects/Projects';
+import TopButton from './Components/TopButton';
 
 function ProjectsPage() {
   return (
@@ -11,6 +12,7 @@ function ProjectsPage() {
       <ProjectHeader />
       <Projects />
       <Footer />
+      <TopButton />
     </div>
   );
 }

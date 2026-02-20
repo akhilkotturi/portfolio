@@ -35,7 +35,7 @@ export const projects = [
     },
     {
       title: "Fitly",
-      tags: ["fitness", "workout planner", "health", "full stack", "ai"],
+      tags: ["fitness", "workout planner", "health", "full stack", "ai", "mobile app"],
       photos: [
         "Images/ProjectPictures/Fitly/Fitly_1.png",
         "Images/ProjectPictures/Fitly/Fitly_2.png",
@@ -45,6 +45,10 @@ export const projects = [
         {
           title: "Next JS",
           icon: "Images/Icons/next-js-svgrepo-com.svg",
+        },
+        {
+          title: "React Native",
+          icon: "Images/Icons/react-svgrepo-com.svg",
         },
         {
           title: "TypeScript",

@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(2, 0, 27);
+  background-color: #040320;
   font-family: "Be Vietnam Pro",sans-serif;
+}
+
+.home-surface {
+  background:
+    radial-gradient(1200px 600px at 8% -10%, rgba(59, 130, 246, 0.35), transparent 58%),
+    radial-gradient(900px 540px at 95% 12%, rgba(16, 185, 129, 0.28), transparent 56%),
+    radial-gradient(1000px 700px at 50% 115%, rgba(124, 58, 237, 0.22), transparent 62%),
+    linear-gradient(180deg, #08052f 0%, #040320 38%, #060429 72%, #050324 100%);
+  min-height: 100vh;
 }
 
 /* header {

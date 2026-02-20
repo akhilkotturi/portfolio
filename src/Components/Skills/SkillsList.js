@@ -1,31 +1,33 @@
 export const skills = [
     {
-      title: "HTML",
-      icon: "Images/Icons/html-5-svgrepo-com.svg",
-    },
-    {
-      title: "CSS",
-      icon: "Images/Icons/css-3-svgrepo-com.svg",
-    },
-    {
-      title: "Javascript",
-      icon: "Images/Icons/js-svgrepo-com.svg",
-    },
-    {
       title: "React",
       icon: "Images/Icons/react-svgrepo-com.svg",
     },
     {
-      title: "Tailwind",
-      icon: "Images/Icons/tailwindcss-icon-svgrepo-com.svg",
+      title: "Next.js",
+      icon: "Images/Icons/next-js-svgrepo-com.svg",
+      style: { filter: "invert(1)" },
     },
     {
-      title: "NodeJS",
-      icon: "Images/Icons/nodejs-icon-svgrepo-com.svg",
+      title: "TypeScript",
+      icon: "Images/Icons/typescript-icon-svgrepo-com.svg",
     },
     {
-      title: "Git",
-      icon: "Images/Icons/git-svgrepo-com.svg",
+      title: "PostgreSQL",
+      icon: "Images/Icons/postgresql-svgrepo-com.svg",
+    },
+    {
+      title: "Supabase",
+      icon: "Images/Icons/supabase.svg",
+    },
+    {
+      title: "Flask",
+      icon: "Images/Icons/flask-svgrepo-com.svg",
+    },
+    {
+      title: "Spring Boot",
+      icon: "Images/Icons/spring-boot-svgrepo-com.svg",
+      style: { filter: "invert(1)" },
     },
     {
       title: "AWS",
@@ -33,21 +35,19 @@ export const skills = [
       style: { filter: "invert(1)" },
     },
     {
-      title: "Firebase",
-      icon: "Images/Icons/firebase-svgrepo-com.svg",
+      title: "Gemini API",
+      icon: "Images/Icons/gemini-color.svg",
     },
     {
-      title: "NextJS",
-      icon: "Images/Icons/next-js-svgrepo-com.svg",
-      style: { filter: "invert(1)" },
+      title: "GPT-4 API",
+      icon: "Images/Icons/chatgpt.svg",
     },
     {
-      title: "SpringBoot",
-      icon: "Images/Icons/spring-boot-svgrepo-com.svg",
-      style: { filter: "invert(1)" },
+      title: "Three.js",
+      icon: "Images/Icons/Three.js_Icon.svg",
     },
     {
-      title: "Python",
-      icon: "Images/Icons/python-svgrepo-com.svg",
+      title: "React Native",
+      icon: "Images/Icons/react-svgrepo-com.svg",
     },
   ];
