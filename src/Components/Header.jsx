@@ -1,4 +1,3 @@
-import { Link, NavLink } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Header() {

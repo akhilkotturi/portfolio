@@ -1,5 +1,3 @@
-import { Link, NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { skills } from "./SkillsList";
 
 export default function Skills() {
@@ -18,7 +16,7 @@ export default function Skills() {
                                         key={index}
                                         className="w-20 mx-auto flex items-center flex-col justify-center border-2 p-4 rounded-xl drop-shadow-xl hover:scale-105"
                                     >
-                                        <img src={item.icon} style={item.style} />
+                                        <img src={item.icon} alt={item.title} style={item.style} />
                                         <p className="text-xs font-bold mt-3 opacity-80">
                                             {item.title}
                                         </p>

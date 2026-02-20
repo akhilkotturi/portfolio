@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState } from "react";
 
 export default function TopButton() {
@@ -25,7 +24,7 @@ export default function TopButton() {
     return (
         <>
         {topButton && (
-            <button className="fixed bottom-14 right-14 h-14 w-14 text-5xl">^</button>
+            <button onClick={scrollUp} className="fixed bottom-14 right-14 h-14 w-14 text-5xl" aria-label="Scroll to top">^</button>
         )}
         </>
     );

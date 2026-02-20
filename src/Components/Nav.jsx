@@ -1,5 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
-import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
     return (
@@ -12,6 +11,7 @@ export default function Nav() {
                             <img
                                 className="mr-2 transform hover:rotate-180 hover:scale-75 transition-transform duration-500"
                                 src="Images/akhillogo.png"
+                                alt="Akhil logo"
                                 width="60"
                             />
                             </Link>
