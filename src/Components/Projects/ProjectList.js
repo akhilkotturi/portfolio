@@ -33,6 +33,38 @@ export const projects = [
       repo: "https://github.com/nootsquared/CARTA",
     },
     {
+      title: "Fitly",
+      photos: [
+        "Images/ProjectPictures/Fitly/Fitly_1.png",
+        "Images/ProjectPictures/Fitly/Fitly_2.png",
+      ],
+      description: "Fitly is a workout planner application that allows users to create and manage their own workout plans. The application is built with a focus on user experience and accessibility, allowing users to generate new workout plans tailored to their fitness goals.",
+      skills: [
+        {
+          title: "Next JS",
+          icon: "Images/Icons/next-js-svgrepo-com.svg",
+        },
+        {
+          title: "TypeScript",
+          icon: "Images/Icons/typescript-icon-svgrepo-com.svg",
+        },
+        {
+          title: "PostgreSQL",
+          icon: "Images/Icons/postgresql-svgrepo-com.svg",
+        },
+        {
+          title: "Supabase",
+          icon: "Images/Icons/supabase.svg",
+        },
+        {
+          title: "GPT-4 API",
+          icon: "Images/Icons/chatgpt.svg",
+        }
+      ],
+      live: "",
+      repo: "https://github.com/akhilkotturi/WorkoutPlannerApp",
+    },
+    {
       title: "Project UCode",
       photos: [
         "Images/ProjectPictures/ProjectUCodeLanding.png",
