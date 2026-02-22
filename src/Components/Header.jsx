@@ -11,13 +11,13 @@ export default function Header() {
 
     return (
         <>
-            <header className="relative w-full h-auto pt-4 sm:pt-10 pb-10 md:pb-14 flex justify-start text-center flex-col items-center z-10">
+            <header className="relative w-full flex-1 min-h-0 pt-4 sm:pt-20 pb-8 md:pb-10 flex justify-start text-center flex-col items-center z-10">
                 <div className="absolute inset-0 pointer-events-none">
                     <div className="absolute -top-28 left-[2%] w-[34rem] h-[34rem] rounded-full bg-blue-400/22 blur-[140px]" />
                     <div className="absolute top-[-5%] right-[2%] w-[32rem] h-[32rem] rounded-full bg-emerald-300/18 blur-[140px]" />
                 </div>
                 <div className="wrapper text-white relative">
-                    <div className="max-w-4xl mx-auto px-6 md:px-10 py-4 md:py-6">
+                    <div className="max-w-4xl mx-auto px-6 md:px-10 pt-0 md:pt-1 pb-3 md:pb-4">
                         <h1 className='lg:text-8xl sm:text-5xl text-5xl font-bold leading-tight'>Hello, I'm <br />Akhil Kotturi</h1>
                         <span className="text-green-300 pt-4 block lg:text-5xl sm:text-2xl text-2xl font-semibold min-h-[3.5rem]">
                             {text}<Cursor />
