@@ -71,6 +71,30 @@ export const projects = [
       repo: "https://github.com/akhilkotturi/WorkoutPlannerApp",
     },
     {
+      title: "PGE Energy AI Hackathon",
+      tags: ["machine learning", "python", "ml", "ai", "hackathon","colab","team","placed"],
+      photos: [
+        "public/Images/hackathongroup2025.png",
+      ],
+      description: "Placed in the top 20% by building an end-to-end machine learning pipeline for oil production forecasting. Developed an ensemble system combining XGBoost, Ridge Regression, and PyTorch neural networks to predict 3-year cumulative oil production across 12 wells, achieving an R² of 0.94. Engineered 80+ domain-specific features from well log data.",
+      skills: [
+        {
+          title: "Python",
+          icon: "Images/Icons/python-svgrepo-com.svg",
+        },
+        {
+          title: "XGBoost",
+          icon: "Images/Icons/python-svgrepo-com.svg",
+        },
+        {
+          title: "Optuna",
+          icon: "Images/Icons/python-svgrepo-com.svg",
+        }
+      ],
+      live: "",
+      repo: "https://github.com/akhilkotturi/PE-HACKS-2026",
+    },
+    {
       title: "Project UCode",
       tags: ["nonprofit", "education", "e-learning", "community", "web platform"],
       photos: [

@@ -8,28 +8,17 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@material-tailwind/react": "^2.1.9",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.25.1",
-    "react-scripts": "^5.0.1",
+    "react-router-dom": "^7.13.0",
     "react-simple-typewriter": "^5.0.1",
-    "swiper": "^12.0.3",
-    "web-vitals": "^2.1.4"
+    "swiper": "^12.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
@@ -44,6 +33,9 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.6"
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^3.4.6",
+    "vite": "^6.4.1"
   }
 }
