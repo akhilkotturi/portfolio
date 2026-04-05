@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Akhil Kotturi — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio website built with React 18, Vite, and Tailwind CSS. Features a galaxy-themed UI with an interactive 3D scene, animated sections, and a full project showcase.
 
-## Available Scripts
+**Live site:** [akhilkotturi.com](https://akhilkotturi.com) (deployed on Vercel)
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- **React 18** + **React Router v7**
+- **Vite** (build tool)
+- **Tailwind CSS** (styling)
+- **Framer Motion** (animations)
+- **Three.js** (3D hero scene)
+- **Formspree** (contact form)
+- Deployed on **Vercel**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Interactive 3D scene and animated star field background
+- Animated section reveals with Framer Motion
+- Featured projects with live demo and repo links
+- Skills organized by category (Frontend, Backend, AI/ML, Tools)
+- Experience timeline
+- Contact form via Formspree
+- Responsive across all screen sizes
 
-### `npm test`
+## Projects Showcased
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Parkunity** — Hyperlocal park event discovery with live heatmap and AI-generated posters
+- **CARTA** — Car payment planning app with AI financial advising (HackTX 2025)
+- **Fitly** — AI-powered workout planner (React Native + Next.js + Supabase)
+- **PGE Energy AI Hackathon** — ML pipeline for oil production forecasting (top 20%, R² = 0.94)
+- **Project UCode** — Non-profit CS education platform (React + Firebase)
+- **Tax Calculator** — Full-stack property tax calculator (React + Spring Boot + AWS)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+npm run dev       # development server at http://localhost:5173
+npm run build     # production build
+npm run preview   # preview production build
+```

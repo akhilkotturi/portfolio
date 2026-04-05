@@ -7,7 +7,7 @@ import TopButton from './Components/TopButton';
 
 function ProjectsPage() {
   return (
-    <div className="App">
+    <div className="App galaxy-surface">
       <Nav />
       <ProjectHeader />
       <Projects />

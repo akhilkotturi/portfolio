@@ -3,10 +3,12 @@ import './styles/App.css';
 import HomePage from './HomePage';
 import ProjectsPage from './ProjectsPage';
 import ScrollToTop from './Components/ScrollToTop';
+import StarField from './Components/StarField';
 
 function App() {
   return (
     <div className="App">
+      <StarField />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
