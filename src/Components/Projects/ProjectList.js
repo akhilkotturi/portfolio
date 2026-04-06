@@ -38,6 +38,42 @@ export const projects = [
       repo: "https://github.com/s-sannidhi/HHGProject",
     },
     {
+      title: "Mise en Place",
+      tags: ["cooking", "ai assistant", "recipes", "cook mode", "chatbot", "timers", "web app"],
+      photos: [
+        "/Images/ProjectPictures/Mise/Mise_1.png",
+        "/Images/ProjectPictures/Mise/Mise_2.png",
+        "/Images/ProjectPictures/Mise/Mise_3.png",
+        "/Images/ProjectPictures/Mise/Mise_4.png",
+        "/Images/ProjectPictures/Mise/Mise_5.png",
+      ],
+      description: "Mise en Place is an AI cooking assistant that helps users ask recipe questions, browse recipes, and follow guided cook-mode instructions with ingredients, step-by-step directions, and built-in timers. The interface is designed around a warm, distraction-free kitchen workflow so people can move from question to plate with less friction.",
+      skills: [
+        {
+          title: "NextJS",
+          icon: "/Images/Icons/next-js-svgrepo-com.svg",
+        },
+        {
+          title: "MongoDB",
+          icon: "/Images/Icons/react-svgrepo-com.svg",
+        },
+        {
+          title: "Langchain",
+          icon: "/Images/Icons/postgresql-svgrepo-com.svg",
+        },
+        {
+          title: "Supabase",
+          icon: "/Images/Icons/typescript-icon-svgrepo-com.svg",
+        },
+        {
+          title: "Llama",
+          icon: "/Images/Icons/chatgpt.svg",
+        }
+      ],
+      live: "",
+      repo: "https://github.com/akhilkotturi/CookingAI",
+    },
+    {
       title: "CARTA",
       tags: ["fintech", "car payment", "financial planning", "ai", "hackathon"],
       photos: [
