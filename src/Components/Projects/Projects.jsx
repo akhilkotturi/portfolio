@@ -86,12 +86,6 @@ function Lightbox({ photos, idx, title, onClose, onPrev, onNext, onGoTo }) {
                         </>
                     )}
 
-                    {/* Counter */}
-                    {n > 1 && (
-                        <div className="absolute top-3 left-3 z-20 inline-flex items-center justify-center min-w-10 h-6 px-2.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-white text-[11px] font-bold tracking-[0.16em] shadow-[0_0_16px_rgba(0,0,0,0.35)]">
-                            {idx + 1} / {n}
-                        </div>
-                    )}
                 </div>
 
                 {/* Bottom row: dots + close */}
@@ -201,7 +195,6 @@ function ImageCarousel({ photos, title }) {
                             ))}
                         </div>
 
-                        <div className="absolute top-2.5 left-2.5 z-20 hud-text text-[10px]">{idx + 1}/{n}</div>
                     </>
                 )}
             </div>

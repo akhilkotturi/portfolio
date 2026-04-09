@@ -35,7 +35,6 @@ function Lightbox({ photos, idx, title, onClose, onPrev, onNext, onGoTo }) {
                         <>
                             <button onClick={onPrev} className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/55 border border-white/18 text-white/85 hover:bg-black/75 hover:text-white flex items-center justify-center text-xl transition-all backdrop-blur-sm">‹</button>
                             <button onClick={onNext} className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/55 border border-white/18 text-white/85 hover:bg-black/75 hover:text-white flex items-center justify-center text-xl transition-all backdrop-blur-sm">›</button>
-                            <div className="absolute top-3 left-3 z-20 hud-text text-[11px] bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/10">{idx + 1} / {n}</div>
                         </>
                     )}
                 </div>
@@ -135,19 +134,6 @@ function MiniProjectCard({ project, index }) {
 
                 {/* Content */}
                 <div className="p-5 flex flex-col flex-1">
-                    {/* Number + Live badges */}
-                    <div className="flex items-center justify-between mb-2">
-                        <span className="inline-flex items-center justify-center min-w-8 h-6 px-2 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white text-[10px] font-bold tracking-[0.16em] shadow-[0_0_16px_rgba(0,0,0,0.35)]">
-                            0{index + 1}
-                        </span>
-                        {project.live && (
-                            <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/12 border border-emerald-500/28">
-                                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.9)] animate-data-pulse" />
-                                <span className="text-emerald-300 text-[10px] font-bold tracking-wide">LIVE</span>
-                            </div>
-                        )}
-                    </div>
-
                     <h3 className="text-white font-bold text-lg mb-1.5 leading-tight">
                         {project.title}
                     </h3>

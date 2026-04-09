@@ -70,7 +70,7 @@ export const projects = [
           icon: "/Images/Icons/chatgpt.svg",
         }
       ],
-      live: "",
+      live: "https://mise-en-place-app.vercel.app/",
       repo: "https://github.com/akhilkotturi/CookingAI",
     },
     {
