@@ -1,7 +1,7 @@
 export const experiences = [
   {
     company: "Ryan LLC",
-    role: "AI Engineering Inter",
+    role: "AI Engineering Intern",
     period: "May 2026 - Present",
   },
   {
