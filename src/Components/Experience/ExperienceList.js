@@ -1,18 +1,18 @@
 export const experiences = [
   {
-    company: "Research SWE",
-    role: "Cosmic AI",
-    period: "Incoming",
+    company: "Ryan LLC",
+    role: "AI Engineering Inter",
+    period: "May 2026 - Present",
   },
   {
     company: "Jump Finance",
     role: "SWE Intern",
-    period: "January 2026 — Present",
+    period: "January 2026 — May 2026",
   },
   {
     company: "Verdatronics",
     role: "Software Developer",
-    period: "December 2025 — Present",
+    period: "December 2025 — May 2026",
   },
   {
     company: "UT Austin DiRP",
