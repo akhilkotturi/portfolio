@@ -1,4 +1,4 @@
-import{r as ma,j as ol}from"./index-DhQi-ZHl.js";/**
+import{r as ma,j as ol}from"./index-NccJcKmE.js";/**
  * @license
  * Copyright 2010-2026 Three.js Authors
  * SPDX-License-Identifier: MIT
