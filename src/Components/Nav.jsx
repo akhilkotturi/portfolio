@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useScroll } from "framer-motion";
 
-export default function Nav() {
+export default function Nav({ theme = "dark", onToggleTheme }) {
     const { scrollYProgress } = useScroll();
     const [scaleX, setScaleX] = useState(0);
     const [scrolled, setScrolled] = useState(false);
@@ -73,6 +73,16 @@ export default function Nav() {
                             Projects
                         </Link>
                     </div>
+
+                    <button
+                        type="button"
+                        onClick={onToggleTheme}
+                        className="theme-toggle ml-2"
+                        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+                        title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+                    >
+                        <span aria-hidden="true">{theme === "dark" ? "☼" : "☾"}</span>
+                    </button>
                 </div>
             </nav>
         </>

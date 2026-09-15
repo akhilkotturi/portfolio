@@ -1,7 +1,75 @@
 export const projects = [
     {
+      title: "GroceryHero",
+      tags: ["grocery", "deals", "machine learning", "rag", "maps", "full stack"],
+      photos: [],
+      description: "GroceryHero centralizes and web-scrapes weekly grocery deals across major and specialty stores, ranks discounts with ML, and maps participating stores nearby. It also includes a natural-language deal assistant for finding relevant savings from a short query.",
+      skills: [
+        {
+          title: "Next JS",
+          icon: "/Images/Icons/next-js-svgrepo-com.svg",
+        },
+        {
+          title: "Tailwind CSS",
+          icon: "/Images/Icons/tailwindcss-icon-svgrepo-com.svg",
+        },
+        {
+          title: "FastAPI",
+          icon: "/Images/Icons/python-svgrepo-com.svg",
+        },
+        {
+          title: "PostgreSQL",
+          icon: "/Images/Icons/postgresql-svgrepo-com.svg",
+        },
+        {
+          title: "XGBoost",
+          icon: "/Images/Icons/XGBoost_logo.png",
+        }
+      ],
+      live: "",
+      repo: "https://github.com/akhilkotturi/groceryhero",
+    },
+    {
+      title: "CodeTalk",
+      tags: ["team", "project", "github", "microservices", "api gateway", "full stack"],
+      photos: [],
+      description: "CodeTalk is a project command center for teams working through a build together. It combines project planning, a task board, collaborative planning docs, a shared whiteboard, GitHub activity, presentation notes, and incident-room tools in one workspace.",
+      skills: [
+        {
+          title: "TypeScript",
+          icon: "/Images/Icons/next-js-svgrepo-com.svg",
+        },
+        {
+          title: "RabbitMQ",
+          icon: "/Images/Icons/tailwindcss-icon-svgrepo-com.svg",
+        },
+        {
+          title: "WebSockets",
+          icon: "/Images/Icons/python-svgrepo-com.svg",
+        },
+        {
+          title: "ExpressJS",
+          icon: "/Images/Icons/postgresql-svgrepo-com.svg",
+        },
+        {
+          title: "Kong",
+          icon: "/Images/Icons/XGBoost_logo.png",
+        },
+        {
+          title: "NodeJS",
+          icon: "/Images/Icons/NodeJs_logo.png",
+        },
+        {
+          title: "PostgreSQL",
+          icon: "/Images/Icons/NodeJs_logo.png",
+        }
+      ],
+      live: "",
+      repo: "https://github.com/akhilkotturi/CodeTalk",
+    },
+    {
       title: "Parkunity",
-      tags: ["communuity", "parks", "local", "organizing", "ai", "hackathon"],
+      tags: ["community", "parks", "local", "organizing", "ai", "hackathon"],
       photos: [
         "/Images/ProjectPictures/Parkunity/Parkunity_1.png",
         "/Images/ProjectPictures/Parkunity/Parkunity_2.png",
@@ -106,10 +174,10 @@ export const projects = [
     {
       title: "Fitly",
       tags: ["fitness", "workout planner", "health", "full stack", "ai", "mobile app"],
-      photos: [
-        "/Images/ProjectPictures/Fitly/Fitly_1.png",
-        "/Images/ProjectPictures/Fitly/Fitly_2.png",
-      ],
+      // photos: [
+      //   "/Images/ProjectPictures/Fitly/Fitly_1.png",
+      //   "/Images/ProjectPictures/Fitly/Fitly_2.png",
+      // ],
       description: "Fitly is a workout planner application that allows users to create and manage their own workout plans. The application is built with a focus on user experience and accessibility, allowing users to generate new workout plans tailored to their fitness goals.",
       skills: [
         {
@@ -192,7 +260,7 @@ export const projects = [
       // skills: ["HTML","CSS","React","React Router","Firebase"]
     },
     {
-        title: "Tax Calulator",
+        title: "Tax Calculator",
       tags: ["tax", "property tax", "calculator", "spring boot", "aws"],
         photos: [
         "/Images/ProjectPictures/TaxAppLanding.png",

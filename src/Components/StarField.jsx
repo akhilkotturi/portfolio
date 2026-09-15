@@ -47,7 +47,7 @@ const AURORA_BANDS = [
 
 export default function StarField() {
     // Three depth layers — distant, mid, close (lean counts for smooth scroll)
-    const distantStars = useMemo(() => Array.from({ length: 65 }, (_, i) => ({
+    const distantStars = useMemo(() => Array.from({ length: 42 }, (_, i) => ({
         id: `d${i}`,
         top: rand(0, 100), left: rand(0, 100),
         size: rand(0.4, 1.1),
@@ -57,7 +57,7 @@ export default function StarField() {
         opacity: rand(0.15, 0.45),
     })), []);
 
-    const midStars = useMemo(() => Array.from({ length: 35 }, (_, i) => ({
+    const midStars = useMemo(() => Array.from({ length: 22 }, (_, i) => ({
         id: `m${i}`,
         top: rand(0, 100), left: rand(0, 100),
         size: rand(1.1, 2.2),
@@ -67,7 +67,7 @@ export default function StarField() {
         opacity: rand(0.4, 0.88),
     })), []);
 
-    const closeStars = useMemo(() => Array.from({ length: 10 }, (_, i) => ({
+    const closeStars = useMemo(() => Array.from({ length: 6 }, (_, i) => ({
         id: `c${i}`,
         top: rand(0, 100), left: rand(0, 100),
         size: rand(2.2, 3.6),
@@ -83,8 +83,6 @@ export default function StarField() {
         { top: 28, left: -2, delay: 15, duration: 7,   angle: -16, color: 'rgba(192,132,252,0.95)', width: 130 },
         { top: 6,  left: -2, delay: 26, duration: 4.5, angle: -30, color: 'rgba(186,230,253,0.85)', width: 100 },
         { top: 18, left: -2, delay: 38, duration: 6,   angle: -20, color: 'rgba(249,168,212,0.78)', width: 120 },
-        { top: 42, left: -2, delay: 52, duration: 5,   angle: -14, color: 'rgba(167,139,250,0.92)', width: 115 },
-        { top: 14, left: -2, delay: 68, duration: 8,   angle: -25, color: 'rgba(196,254,255,0.7)',  width: 90  },
     ], []);
 
     const allStars = [...distantStars, ...midStars, ...closeStars];

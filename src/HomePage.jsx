@@ -12,11 +12,11 @@ import Experience from './Components/Experience/Experience';
 
 const Scene3D = lazy(() => import('./Components/Scene3D'));
 
-function HomePage() {
+function HomePage({ theme, onToggleTheme }) {
   return (
     <div className="App home-surface text-white">
-      <Suspense fallback={null}><Scene3D /></Suspense>
-      <Nav />
+      {theme === 'dark' && <Suspense fallback={null}><Scene3D /></Suspense>}
+      <Nav theme={theme} onToggleTheme={onToggleTheme} />
       <Header />
       <FeaturedProjects />
       <About />

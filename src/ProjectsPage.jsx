@@ -5,10 +5,10 @@ import Footer from './Components/Footer';
 import Projects from './Components/Projects/Projects';
 import TopButton from './Components/TopButton';
 
-function ProjectsPage() {
+function ProjectsPage({ theme, onToggleTheme }) {
   return (
     <div className="App galaxy-surface">
-      <Nav />
+      <Nav theme={theme} onToggleTheme={onToggleTheme} />
       <ProjectHeader />
       <Projects />
       <Footer />

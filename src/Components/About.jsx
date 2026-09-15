@@ -58,7 +58,7 @@ export default function About() {
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-white/65 mb-10">
                             <ScrollRevealText
-                                text="My journey started in middle school and led me to co-found Project UCode, a non-profit platform bringing CS education to students worldwide. When I'm not coding, you'll find me at the gym, building side projects, or grinding LeetCode."
+                                text="My journey started in middle school and led me to co-found Project UCode, a non-profit platform bringing CS education to students worldwide. When I'm not coding, you'll find me at the gym, building side projects, or grinding LeetCode. I also make tech content."
                             />
                         </p>
 
