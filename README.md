@@ -2,7 +2,7 @@
 
 Personal portfolio website built with React 18, Vite, and Tailwind CSS. Features a galaxy-themed UI with an interactive 3D scene, animated sections, and a full project showcase.
 
-**Live site:** [akhilkotturi.com](https://akhilkotturi.com) (deployed on Vercel)
+**Live site:** [akhilk.vercel.app](https://akhilk.vercel.app) (deployed on Vercel)
 
 ## Tech Stack
 
