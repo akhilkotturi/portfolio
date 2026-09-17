@@ -74,6 +74,44 @@ function SkillRow({ category, index }) {
     );
 }
 
+function CertificationRow() {
+    return (
+        <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        >
+            <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-7">
+                <div className="md:w-28 shrink-0 pt-0.5">
+                    <span
+                        className="text-[11px] font-bold tracking-[0.18em] uppercase font-mono"
+                        style={{ color: "rgba(250,204,21,0.9)" }}
+                    >
+                        Certifications
+                    </span>
+                </div>
+
+                <a
+                    href="https://www.credly.com/badges/ab387778-36d0-4e6e-9e88-992db45d1522/embedded"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="View AWS Certified Cloud Practitioner certification on Credly"
+                    className="inline-flex rounded-full transition-transform duration-200 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-yellow-300"
+                >
+                    <img
+                        src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+                        alt="AWS Certified Cloud Practitioner certification badge"
+                        className="w-[120px] h-[120px] object-contain"
+                    />
+                </a>
+            </div>
+
+            <div className="nebula-divider" />
+        </motion.div>
+    );
+}
+
 export default function Skills() {
     return (
         <section className="bg-transparent py-20 md:py-28">
@@ -97,6 +135,8 @@ export default function Skills() {
                 {skillCategories.map((cat, i) => (
                     <SkillRow key={i} category={cat} index={i} />
                 ))}
+
+                <CertificationRow />
 
                 <AnimatedSection className="mt-10" delay={0.2}>
                     <Link
