@@ -211,9 +211,9 @@ export const projects = [
     {
       title: "PGE Energy AI Hackathon",
       tags: ["machine learning", "python", "ml", "ai", "hackathon","colab","team","placed"],
-      photos: [
-        "/Images/hackathongroup2025.png",
-      ],
+      // photos: [
+      //   "/Images/hackathongroup2025.png",
+      // ],
       description: "Placed in the top 20% by building an end-to-end machine learning pipeline for oil production forecasting. Developed an ensemble system combining XGBoost, Ridge Regression, and PyTorch neural networks to predict 3-year cumulative oil production across 12 wells, achieving an R² of 0.94. Engineered 80+ domain-specific features from well log data.",
       skills: [
         {
@@ -259,39 +259,39 @@ export const projects = [
       repo: "https://github.com/Project-UCode/Website",
       // skills: ["HTML","CSS","React","React Router","Firebase"]
     },
-    {
-        title: "Tax Calculator",
-      tags: ["tax", "property tax", "calculator", "spring boot", "aws"],
-        photos: [
-        "/Images/ProjectPictures/TaxAppLanding.png",
-        ],
-        description: "The Tax Calculator is a web application that allows users to calculate how much property tax they would have to pay based on the County they live in and the price of their property. Utilizing a Rest API I built, this projects connects the front-end and backend, creating a powerful full-stack application.",
-        skills: [
-          {
-            title: "HTML",
-            icon: "/Images/Icons/html-5-svgrepo-com.svg",
-          },
-          {
-            title: "CSS",
-            icon: "/Images/Icons/css-3-svgrepo-com.svg",
-          },
-          {
-            title: "React JS",
-            icon: "/Images/Icons/react-svgrepo-com.svg",
-          },
-          {
-            title: "SpringBoot",
-            icon: "/Images/Icons/spring-boot-svgrepo-com.svg",
-            style: { filter: "invert(1)" },
-          },
-          {
-            title: "AWS",
-            icon: "/Images/Icons/aws-svgrepo-com.svg",
-            style: { filter: "invert(1)" },
-          },
-        ],
-        live: "",
-        repo: "https://github.com/akhilkotturi/springboot-render",
-        // skills: ["HTML","CSS","React","SpringBoot","AWS"]
-    },
+    // {
+    //     title: "Tax Calculator",
+    //   tags: ["tax", "property tax", "calculator", "spring boot", "aws"],
+    //     photos: [
+    //     "/Images/ProjectPictures/TaxAppLanding.png",
+    //     ],
+    //     description: "The Tax Calculator is a web application that allows users to calculate how much property tax they would have to pay based on the County they live in and the price of their property. Utilizing a Rest API I built, this projects connects the front-end and backend, creating a powerful full-stack application.",
+    //     skills: [
+    //       {
+    //         title: "HTML",
+    //         icon: "/Images/Icons/html-5-svgrepo-com.svg",
+    //       },
+    //       {
+    //         title: "CSS",
+    //         icon: "/Images/Icons/css-3-svgrepo-com.svg",
+    //       },
+    //       {
+    //         title: "React JS",
+    //         icon: "/Images/Icons/react-svgrepo-com.svg",
+    //       },
+    //       {
+    //         title: "SpringBoot",
+    //         icon: "/Images/Icons/spring-boot-svgrepo-com.svg",
+    //         style: { filter: "invert(1)" },
+    //       },
+    //       {
+    //         title: "AWS",
+    //         icon: "/Images/Icons/aws-svgrepo-com.svg",
+    //         style: { filter: "invert(1)" },
+    //       },
+    //     ],
+    //     live: "",
+    //     repo: "https://github.com/akhilkotturi/springboot-render",
+    //     // skills: ["HTML","CSS","React","SpringBoot","AWS"]
+    // },
   ];
